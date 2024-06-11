@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FadeScreen : MonoBehaviour
 {
@@ -9,13 +10,13 @@ public class FadeScreen : MonoBehaviour
     public Color fadeColor;
     public AnimationCurve fadeCurve;
     public string colorPropertyName = "_Color";
-    private Renderer rend;
+    private Image FadeImage;
 
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        rend.enabled = false;
+        FadeImage = GetComponent<Image>();
+        FadeImage.enabled = false;
 
         if (fadeOnStart)
             FadeIn();
@@ -38,7 +39,7 @@ public class FadeScreen : MonoBehaviour
 
     public IEnumerator FadeRoutine(float alphaIn,float alphaOut)
     {
-        rend.enabled = true;
+        FadeImage.enabled = true;
 
         float timer = 0;
         while(timer <= fadeDuration)
@@ -46,7 +47,7 @@ public class FadeScreen : MonoBehaviour
             Color newColor = fadeColor;
             newColor.a = Mathf.Lerp(alphaIn, alphaOut, fadeCurve.Evaluate(timer / fadeDuration));
 
-            rend.material.SetColor(colorPropertyName, newColor);
+            FadeImage.material.SetColor(colorPropertyName, newColor);
 
             timer += Time.deltaTime;
             yield return null;
@@ -54,9 +55,9 @@ public class FadeScreen : MonoBehaviour
 
         Color newColor2 = fadeColor;
         newColor2.a = alphaOut;
-        rend.material.SetColor(colorPropertyName, newColor2);
+        FadeImage.material.SetColor(colorPropertyName, newColor2);
 
         if(alphaOut == 0)
-            rend.enabled = false;
+            FadeImage.enabled = false;
     }
 }
