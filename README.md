@@ -1,6 +1,9 @@
 # ITbuggers #
 
 # Clear installation and usage instructions
+This game is made for the VR goggles Meta Quest 2.
+Make sure that the Meta Quest 2 is fully charged and ready to use. The game duration is about 15 minutes.
+
 
 # Development tools used
 Unity AssetStore:
