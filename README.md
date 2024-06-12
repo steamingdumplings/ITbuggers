@@ -12,3 +12,8 @@ Unity AssetStore:
    3. WorldSkies Free Skybox Pack
    4. Sci-Fi Styled Modular Pack
    5. Starters Asset Provided by Valem Tutorials on Youtube
+   6. Root vegetables set > Vertex Cat
+   7. Robot Kyle | URP > Unity Technologies
+   8. Sci-Fi Hologram Shader > Zololgo
+   9. 3D Character Sci-Fi Robots Bundle > Same Gev Dudios
+   10. Be Kind Sim > Meshtint Studio
