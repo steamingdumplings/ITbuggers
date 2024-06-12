@@ -31,3 +31,6 @@ Unity AssetStore:
    8. Sci-Fi Hologram Shader > Zololgo
    9. 3D Character Sci-Fi Robots Bundle > Same Gev Dudios
    10. Be Kind Sim > Meshtint Studio
+
+
+The MIT License (MIT)
