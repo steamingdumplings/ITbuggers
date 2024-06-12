@@ -17,6 +17,8 @@ Make sure that the Meta Quest 2 is fully charged and ready to use. The game dura
 
    If you encounter issues, make sure your Quest 2 and SideQuest are up to date. Also check USB connections and ensure USB debugging is enabled on your Quest 2.
 
+   Enjoy the game! :)
+
 # Development tools used
 Unity AssetStore:
    1. Danger Sci-Fi Loops > ALESSANDRO FAMA
